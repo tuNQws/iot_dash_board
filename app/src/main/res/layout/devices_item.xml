@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:id="@+id/device_info"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/last_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="last connect"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/device_image"
+        android:scaleType="fitXY"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/device_info"/>
+
+</RelativeLayout>
