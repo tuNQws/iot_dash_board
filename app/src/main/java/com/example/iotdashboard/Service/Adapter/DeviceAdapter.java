@@ -1,7 +1,6 @@
 package com.example.iotdashboard.Service.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,8 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.iotdashboard.R;
 import com.example.iotdashboard.Service.Model.Device;
 import com.squareup.picasso.Picasso;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 

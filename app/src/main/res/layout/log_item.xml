@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@drawable/round_border_shape"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/log_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Name"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:padding="5dp"
+            android:textColor="#0054FF"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/log_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log ip"
+
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/log_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log id"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/sensor_type"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="SENSOR TYPE"
+        android:background="@drawable/round_border_shape"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/device_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device Value"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textColor="#F12B2B"/>
+        <TextView
+            android:id="@+id/log_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log datetime"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

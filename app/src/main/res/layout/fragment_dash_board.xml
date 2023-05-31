@@ -5,13 +5,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Service.DashBoardFragment">
+    tools:context=".Service.Activity.DashBoardFragment">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hi My Customer,"/>
+            android:text="Hi My Customer,"
+            android:layout_margin="15dp"/>
 
         <ImageView
             android:id="@+id/imageView"
@@ -52,13 +53,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Devices control"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="15dp"/>
+            android:layout_margin="15dp"
+            android:layout_marginTop="30dp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_device"
             android:layout_below="@id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@drawable/round_border_shape"/>
 
 </LinearLayout>

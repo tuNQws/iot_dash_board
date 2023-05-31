@@ -1,4 +1,4 @@
-package com.example.iotdashboard.Service;
+package com.example.iotdashboard.Service.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,9 +16,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
     static DashBoardFragment homeFragment = new DashBoardFragment();
-    static MainFragment searchFragment = new MainFragment();
-    static SettingFragment settingFragment = new SettingFragment();
-    static UserProfileFragment userProfileFragment = new UserProfileFragment();
+    static MainFragment mainFragment = new MainFragment();
+    static LogsFragment logsFragment = new LogsFragment();
+    static ChartFragment chartFragment = new ChartFragment();
 
     private ViewPager viewPager;
 
@@ -76,11 +76,11 @@ public class MainActivity extends AppCompatActivity {
                 case 0:
                     return homeFragment;
                 case 1:
-                    return searchFragment;
+                    return mainFragment;
                 case 2:
-                    return userProfileFragment;
+                    return chartFragment;
                 case 3:
-                    return settingFragment;
+                    return logsFragment;
                 default:
                     return homeFragment;
             }

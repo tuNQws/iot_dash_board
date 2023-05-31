@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/dash_board"
-
+        android:icon="@drawable/ic_home_24"
         android:title="Dash Board" />
     <item
         android:id="@+id/main"
-
+        android:icon="@drawable/ic_control_device_24"
         android:title="Main" />
     <item
         android:id="@+id/chart"
-
+        android:icon="@drawable/ic_person_24"
         android:title="Chart" />
     <item
         android:id="@+id/logs"
-
+        android:icon="@drawable/ic_log_24"
         android:title="Logs" />
 </menu>
