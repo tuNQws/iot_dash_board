@@ -52,9 +52,9 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
         android:text="Temperature"
         android:textColor="#A60909"
-        android:layout_marginStart="5dp"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,18 +77,19 @@
         android:id="@+id/temp_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:text="25"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/temperature_progress_bar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+        app:layout_constraintTop_toTopOf="@+id/temperature_progress_bar" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="52dp"
         android:text="o"
         android:textSize="30sp"
@@ -109,6 +110,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/temperature_progress_bar" />
 
+    <ProgressBar
+        android:id="@+id/prediction_humid_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:progressDrawable="@drawable/humid_progress_shape"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/temperature_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
     <TextView
         android:id="@+id/humid_text_view"
         android:layout_width="wrap_content"
@@ -122,6 +135,18 @@
         app:layout_constraintTop_toTopOf="@+id/humid_progress_bar" />
 
     <TextView
+        android:id="@+id/humid_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="25dp"
+        android:text="25"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/prediction_humid_progress_bar" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -130,6 +155,17 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/humid_progress_bar"
         app:layout_constraintTop_toTopOf="@+id/humid_progress_bar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="%"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/prediction_humid_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/prediction_humid_progress_bar" />
 
     <ProgressBar
         android:id="@+id/light_progress_bar"
@@ -171,14 +207,25 @@
         app:layout_constraintEnd_toEndOf="@+id/light_progress_bar" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/led_button"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@drawable/circle_shape"
+        android:background="@drawable/circle_shape_disabled"
         android:src="@drawable/ic_light_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/humid_progress_bar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Predict"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/temperature_progress_bar"
         app:layout_constraintTop_toTopOf="parent" />
 
 

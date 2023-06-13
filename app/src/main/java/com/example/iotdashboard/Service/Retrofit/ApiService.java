@@ -7,6 +7,7 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface ApiService {
 
@@ -24,4 +25,7 @@ public interface ApiService {
 
     @GET("log")
     Call<List<Log>> getLog();
+
+    @GET("predict")
+    Call<String> getPrediction(@Query("input") String input);
 }
